@@ -10,7 +10,7 @@
       Return cboAccount.Profile
     End Get
     Set(value As Profile)
-      cboAccount.Initialize(value, Function(it) it.Accounts)
+      cboAccount.Initialize(value, Function(it) it.GetAccounts())
     End Set
   End Property
 

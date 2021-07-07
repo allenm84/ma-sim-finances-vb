@@ -31,7 +31,7 @@ Partial Class ChangeBillPaymentEventEditor
         Me.dtpDate = New System.Windows.Forms.DateTimePicker()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.cboBills = New FinanceSim.EntityDropDown()
+        Me.cboBills = New FinanceSim.ItemDropDown()
         Me.tlpLayout.SuspendLayout()
         CType(Me.numNewPayment, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -175,5 +175,5 @@ Partial Class ChangeBillPaymentEventEditor
     Friend WithEvents dtpDate As DateTimePicker
     Friend WithEvents Label2 As Label
     Friend WithEvents Label5 As Label
-    Friend WithEvents cboBills As EntityDropDown
+    Friend WithEvents cboBills As ItemDropDown
 End Class

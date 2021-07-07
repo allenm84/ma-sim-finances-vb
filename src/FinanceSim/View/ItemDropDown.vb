@@ -1,4 +1,4 @@
-﻿Public Class EntityDropDown
+﻿Public Class ItemDropDown
   Private _profile As Profile
   Private _selector As Func(Of Profile, IEnumerable(Of IHasName))
 

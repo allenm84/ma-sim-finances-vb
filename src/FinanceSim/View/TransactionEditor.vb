@@ -16,8 +16,8 @@
     End Get
     Set(value As Profile)
       _profile = value
-      cboFromAccount.Initialize(_profile, Function(it) it.Accounts)
-      cboToAccount.Initialize(_profile, Function(it) it.Accounts)
+      cboFromAccount.Initialize(_profile, Function(it) it.GetAccounts())
+      cboToAccount.Initialize(_profile, Function(it) it.GetAccounts())
     End Set
   End Property
 

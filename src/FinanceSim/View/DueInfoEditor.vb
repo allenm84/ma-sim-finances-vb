@@ -31,7 +31,7 @@
       dtpEnd.SetValue(info.EndOn.Value)
     Else
       chkHasEnd.Checked = False
-      dtpEnd.Value = dtpEnd.MinDate
+      dtpEnd.SetValue(dtpEnd.MinDate)
     End If
     numPeriod.Value = info.Period
     cboDueType.SelectedItem = info.Type
@@ -40,9 +40,14 @@
   End Sub
 
   Public Function ToDueInfo() As DueInfo
+    Dim endOn? As Date = Nothing
+    If chkHasEnd.Checked Then
+      endOn = dtpEnd.Value
+    End If
+
     Return New DueInfo With {
       .StartOn = dtpStart.Value,
-      .EndOn = If(chkHasEnd.Checked, dtpEnd.Value, Nothing),
+      .EndOn = endOn,
       .Period = numPeriod.Value,
       .Type = cboDueType.SelectedItem,
       .Seed = dtpSeed.Value

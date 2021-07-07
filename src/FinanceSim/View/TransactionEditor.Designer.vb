@@ -29,10 +29,10 @@ Partial Class TransactionEditor
         Me.Label3 = New System.Windows.Forms.Label()
         Me.numAmount = New System.Windows.Forms.NumericUpDown()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.cboFromAccount = New FinanceSim.EntityDropDown()
+        Me.cboFromAccount = New FinanceSim.ItemDropDown()
         Me.ctrlDue = New FinanceSim.DueInfoEditor()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.cboToAccount = New FinanceSim.EntityDropDown()
+        Me.cboToAccount = New FinanceSim.ItemDropDown()
         Me.tlpLayout.SuspendLayout()
         CType(Me.numAmount, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -179,12 +179,12 @@ Partial Class TransactionEditor
     End Sub
 
     Friend WithEvents tlpLayout As TableLayoutPanel
-    Friend WithEvents cboToAccount As EntityDropDown
+    Friend WithEvents cboToAccount As ItemDropDown
     Friend WithEvents Label1 As Label
     Friend WithEvents txtName As TextBox
     Friend WithEvents Label2 As Label
     Friend WithEvents Label4 As Label
-    Friend WithEvents cboFromAccount As EntityDropDown
+    Friend WithEvents cboFromAccount As ItemDropDown
     Friend WithEvents ctrlDue As DueInfoEditor
     Friend WithEvents Label3 As Label
     Friend WithEvents numAmount As NumericUpDown

@@ -31,7 +31,7 @@ Partial Class AdjustPaycheckTotalEventEditor
         Me.dtpDate = New System.Windows.Forms.DateTimePicker()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.cboPaychecks = New FinanceSim.EntityDropDown()
+        Me.cboPaychecks = New FinanceSim.ItemDropDown()
         Me.tlpLayout.SuspendLayout()
         CType(Me.numAmount, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -175,5 +175,5 @@ Partial Class AdjustPaycheckTotalEventEditor
     Friend WithEvents dtpDate As DateTimePicker
     Friend WithEvents Label2 As Label
     Friend WithEvents Label5 As Label
-    Friend WithEvents cboPaychecks As EntityDropDown
+    Friend WithEvents cboPaychecks As ItemDropDown
 End Class

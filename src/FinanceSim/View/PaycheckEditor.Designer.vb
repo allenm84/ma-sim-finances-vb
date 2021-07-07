@@ -35,7 +35,7 @@ Partial Class PaycheckEditor
         Me.btnAdd = New System.Windows.Forms.Button()
         Me.btnRemove = New System.Windows.Forms.Button()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.cboAccount = New FinanceSim.EntityDropDown()
+        Me.cboAccount = New FinanceSim.ItemDropDown()
         Me.ctrlDue = New FinanceSim.DueInfoEditor()
         Me.tlpLayout.SuspendLayout()
         CType(Me.numTotal, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -252,6 +252,6 @@ Partial Class PaycheckEditor
     Friend WithEvents btnAdd As Button
     Friend WithEvents btnRemove As Button
     Friend WithEvents Label5 As Label
-    Friend WithEvents cboAccount As EntityDropDown
+    Friend WithEvents cboAccount As ItemDropDown
     Friend WithEvents ctrlDue As DueInfoEditor
 End Class

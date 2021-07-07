@@ -25,7 +25,7 @@ Partial Class PaycheckDepositEditor
         Me.tlpLayout = New System.Windows.Forms.TableLayoutPanel()
         Me.txtName = New System.Windows.Forms.TextBox()
         Me.numAmount = New System.Windows.Forms.NumericUpDown()
-        Me.cboAccount = New FinanceSim.EntityDropDown()
+        Me.cboAccount = New FinanceSim.ItemDropDown()
         Me.tlpLayout.SuspendLayout()
         CType(Me.numAmount, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -96,5 +96,5 @@ Partial Class PaycheckDepositEditor
     Friend WithEvents tlpLayout As TableLayoutPanel
     Friend WithEvents txtName As TextBox
     Friend WithEvents numAmount As NumericUpDown
-    Friend WithEvents cboAccount As EntityDropDown
+    Friend WithEvents cboAccount As ItemDropDown
 End Class

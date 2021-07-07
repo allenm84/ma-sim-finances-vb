@@ -31,7 +31,7 @@ Partial Class DebtEditor
         Me.Label3 = New System.Windows.Forms.Label()
         Me.numPayment = New System.Windows.Forms.NumericUpDown()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.cboAccount = New FinanceSim.EntityDropDown()
+        Me.cboAccount = New FinanceSim.ItemDropDown()
         Me.ctrlDue = New FinanceSim.DueInfoEditor()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.cboType = New System.Windows.Forms.ComboBox()
@@ -238,7 +238,7 @@ Partial Class DebtEditor
     Friend WithEvents Label3 As Label
     Friend WithEvents numPayment As NumericUpDown
     Friend WithEvents Label4 As Label
-    Friend WithEvents cboAccount As EntityDropDown
+    Friend WithEvents cboAccount As ItemDropDown
     Friend WithEvents ctrlDue As DueInfoEditor
     Friend WithEvents Label5 As Label
     Friend WithEvents cboType As ComboBox
