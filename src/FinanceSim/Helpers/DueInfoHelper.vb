@@ -7,7 +7,7 @@
     Return value
   End Function
 
-  Public Shared Function Advance(value As Date, due As DueInfo) As Date
+  Public Shared Function GetNewDate(value As Date, due As DueInfo) As Date
     Dim newDate As Date
     Select Case due.Type
       Case DueType.Daily

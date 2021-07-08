@@ -43,6 +43,9 @@
   End Sub
 
   Public Function CreateNew() As IHasName Implements ICollectionItemEditor.CreateNew
-    Return New Transaction With {.Name = "New Transaction"}
+    Return New Transaction With {
+      .Id = Guid.NewGuid().ToString(),
+      .Name = "New Transaction"
+    }
   End Function
 End Class

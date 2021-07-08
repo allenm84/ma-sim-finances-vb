@@ -2,9 +2,9 @@
 
 Public Class SimulationSetup
   <JsonProperty("Start")>
-  Public Property Starts As Date
+  Public Property StartDate As Date
   <JsonProperty("End")>
-  Public Property Stops As Date
+  Public Property EndDate As Date
   <JsonProperty("UseSnowball")>
   Public Property IsSnowball As Boolean
 End Class

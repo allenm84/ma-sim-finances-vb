@@ -7,5 +7,4 @@
   End Sub
 
   Public ReadOnly Property Value As Object
-
 End Class

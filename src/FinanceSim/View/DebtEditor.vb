@@ -52,6 +52,9 @@
   End Sub
 
   Public Function CreateNew() As IHasName Implements ICollectionItemEditor.CreateNew
-    Return New Debt With {.Name = "New Debt"}
+    Return New Debt With {
+      .Id = Guid.NewGuid().ToString(),
+      .Name = "New Debt"
+    }
   End Function
 End Class

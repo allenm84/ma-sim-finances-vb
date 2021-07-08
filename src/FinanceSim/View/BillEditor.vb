@@ -39,6 +39,9 @@
   End Sub
 
   Public Function CreateNew() As IHasName Implements ICollectionItemEditor.CreateNew
-    Return New Bill With {.Name = "New Bill"}
+    Return New Bill With {
+      .Id = Guid.NewGuid().ToString(),
+      .Name = "New Bill"
+    }
   End Function
 End Class

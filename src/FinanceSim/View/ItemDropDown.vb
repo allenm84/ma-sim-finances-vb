@@ -23,7 +23,7 @@
 
   Public Sub SelectById(id As String)
     cboItems.SelectedIndex = -1
-    For index As Integer = 0 To cboItems.Items.Count - 1 Step 1
+    For index = 0 To cboItems.Items.Count - 1 Step 1
       Dim item = TryCast(cboItems.Items(index), ComboBoxItem)
       Dim account = TryCast(item?.Value, IHasName)
       If String.Equals(account?.Id, id) Then

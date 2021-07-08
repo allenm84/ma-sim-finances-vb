@@ -41,6 +41,9 @@
   End Sub
 
   Public Function CreateNew() As IHasName Implements ICollectionItemEditor.CreateNew
-    Return New BankAccount() With {.Name = "New Account"}
+    Return New BankAccount() With {
+      .Id = Guid.NewGuid().ToString(),
+      .Name = "New Account"
+    }
   End Function
 End Class

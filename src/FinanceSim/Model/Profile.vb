@@ -1,5 +1,7 @@
 ﻿Public Class Profile
-  Public Property Name As String
+  Implements IHasName
+  Public Property Id As String Implements IHasName.Id
+  Public Property Name As String Implements IHasName.Name
   Public Property Created As Date
   Public Property Accounts As List(Of BankAccount) = New List(Of BankAccount)
   Public Property Bills As List(Of Bill) = New List(Of Bill)

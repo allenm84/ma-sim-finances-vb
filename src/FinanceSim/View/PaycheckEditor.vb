@@ -54,6 +54,9 @@
   End Sub
 
   Public Function CreateNew() As IHasName Implements ICollectionItemEditor.CreateNew
-    Return New Paycheck() With {.Name = "New Paycheck"}
+    Return New Paycheck() With {
+      .Id = Guid.NewGuid().ToString(),
+      .Name = "New Paycheck"
+    }
   End Function
 End Class
